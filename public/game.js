@@ -1,6 +1,8 @@
 var Main = Main || {};
 
-Main.game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');
+var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');
+
+Main.game = game;
 
 Main.game.state.add('Preload', Main.Preload);
 Main.game.state.add('MainMenu', Main.MainMenu);

@@ -4,10 +4,10 @@ Main.Preload = function() {};
 
 Main.Preload.prototype = {
     preload: function() {
-        // Example Line : this.load.image('key', 'path');
-        this.game.load.image('logo', 'phaser.png');
+        // Example Line : game.load.image('key', 'path');
+        game.load.image('logo', 'phaser.png');
     },
     create: function() {
-        this.game.state.start('MainMenu');
+        game.state.start('MainMenu');
     }
 };
