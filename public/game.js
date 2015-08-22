@@ -1,18 +1,9 @@
-window.onload = function() {
+var Main = Main || {};
 
-    var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game', { preload: preload, create: create });
+Main.game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');
 
-    function preload () {
+Main.game.state.add('Preload', Main.Preload);
+Main.game.state.add('MainMenu', Main.MainMenu);
+Main.game.state.add('Game', Main.Game);
 
-        game.load.image('logo', 'phaser.png');
-
-    }
-
-    function create () {
-
-        var logo = game.add.sprite(game.world.centerX, game.world.centerY, 'logo');
-        logo.anchor.setTo(0.5, 0.5);
-
-    }
-
-};
+Main.game.state.start('Preload');
