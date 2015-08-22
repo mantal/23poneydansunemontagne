@@ -1,0 +1,26 @@
+{
+  "name": "ludum-dare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mantal/23poneydansunemontagne.git"
+  },
+  "keywords": [
+    "ludum-dare",
+    "game"
+  ],
+  "author": "mantal",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/mantal/23poneydansunemontagne/issues"
+  },
+  "homepage": "https://github.com/mantal/23poneydansunemontagne#readme",
+  "dependencies": {
+    "socket.io": "*"
+  }
+}
